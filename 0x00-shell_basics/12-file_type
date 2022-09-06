@@ -1,3 +1,7 @@
 #!/bin/bash
+<<<<<<< HEAD
+file /tmp/iamafile
+=======
 file/tmp/iamalife
 
+>>>>>>> 0097fb48b3701a5caaf91bc62a3c605952211dd4
