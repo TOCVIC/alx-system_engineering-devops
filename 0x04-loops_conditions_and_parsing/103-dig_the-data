@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Parses the log file in the sophisticated manner
+
+FILE="./apache-access.log"
+if [ -e $FILE ]; then
+	awk '{print $1 " " $9}' $FILE | sort -n | uniq -c | sort -nr
+fi
