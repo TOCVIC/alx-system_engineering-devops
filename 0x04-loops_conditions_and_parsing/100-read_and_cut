@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# Reads the portion of the passwd file, username:uid:path_to_homedir
-
-while IFS=":" read -r -a chunk; do
-    echo "${chunk[0]}:${chunk[3]}:${chunk[5]}"
-done < /etc/passwd

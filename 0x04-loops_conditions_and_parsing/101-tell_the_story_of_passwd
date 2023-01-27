@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# Prints all the fields IFS (internal field separator)
-
-while IFS=":" read -r -a chunk; do
-    echo "The user ${chunk[0]} is part of the ${chunk[3]} gang, lives in ${chunk[5]} and rides ${chunk[6]}. ${chunk[2]}'s place is protected by the passcode ${chunk[1]}, more info about the user here: ${chunk[4]}"
-done < /etc/passwd
