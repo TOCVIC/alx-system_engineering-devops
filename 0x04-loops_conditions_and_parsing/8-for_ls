@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#looping through a cut command grepped by list command in the pwd using - as delimeter
+list=$(ls)
+for i in $list
+do
+    echo "$i" | cut -d "-" -f 2
+done
