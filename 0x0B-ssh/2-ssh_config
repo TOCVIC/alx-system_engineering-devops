@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Creates a client configuration file
+Host web-01
+    Hostname 156813-web-01
+    User ubuntu
+    passwordAuthentication no
+    IdentifyFile ~/.ssh/school
